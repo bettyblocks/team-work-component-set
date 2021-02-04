@@ -12,9 +12,10 @@
       </button>
     );
   })(),
-  styles: () => () => ({
+  styles: () => ({ styles }) => ({
     root: {
-      color: 'red',
+      color: ({ styleId }) =>
+        (styles && styles[styleId] && styles[styleId].color) || 'red',
     },
   }),
 }))();

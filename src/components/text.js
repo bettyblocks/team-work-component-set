@@ -11,9 +11,10 @@
       </p>
     );
   })(),
-  styles: () => () => ({
+  styles: () => ({ styles }) => ({
     paragraph: {
-      color: 'red',
+      color: ({ styleId }) =>
+        (styles && styles[styleId] && styles[styleId].color) || 'red',
     },
   }),
 }))();
