@@ -13,8 +13,8 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.15.3",
     "nodemon": "^1.19.1",
+    "prettier": "^1.15.3",
     "rimraf": "^3.0.0"
   },
   "scripts": {
@@ -24,5 +24,7 @@
     "preview": "bb components preview",
     "lint": "eslint --ext js ./src"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }

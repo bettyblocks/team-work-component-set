@@ -18,4 +18,5 @@
         (styles && styles[styleId] && styles[styleId].color) || 'red',
     },
   }),
+  styleType: 'BUTTON',
 }))();
