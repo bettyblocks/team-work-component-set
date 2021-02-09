@@ -3,6 +3,7 @@
   type: 'CONTENT_COMPONENT',
   allowedTypes: [],
   orientation: 'VERTICAL',
+  styleType: 'BUTTON',
   jsx: (() => {
     const { buttonText } = options;
 
@@ -18,5 +19,4 @@
         (styles && styles[styleId] && styles[styleId].color) || 'red',
     },
   }),
-  styleType: 'BUTTON',
 }))();
