@@ -17,6 +17,9 @@
     root: {
       color: ({ styleId }) =>
         (styles && styles[styleId] && styles[styleId].color) || 'red',
+      backgroundColor: ({ styleId }) =>
+        (styles && styles[styleId] && styles[styleId].backgroundColor) ||
+        'black',
     },
   }),
 }))();
