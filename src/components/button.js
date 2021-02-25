@@ -14,12 +14,9 @@
     );
   })(),
   styles: () => ({ styles }) => ({
-    root: {
-      color: ({ styleId }) =>
-        (styles && styles[styleId] && styles[styleId].color) || 'red',
-      backgroundColor: ({ styleId }) =>
-        (styles && styles[styleId] && styles[styleId].backgroundColor) ||
-        'black',
-    },
+    root: ({ styleId }) => ({
+      padding: '0.5rem 1rem',
+      ...styles[styleId],
+    }),
   }),
 }))();
