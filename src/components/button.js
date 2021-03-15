@@ -13,10 +13,7 @@
       </button>
     );
   })(),
-  styles: () => ({ styles }) => ({
-    root: ({ styleId }) => ({
-      padding: '0.5rem 1rem',
-      ...styles[styleId],
-    }),
+  styles: () => () => ({
+    root: ({ style }) => style,
   }),
 }))();
